@@ -30,9 +30,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run migrations
-        run:  python polls/manage.py migrate
+        run:  python portfolio/manage.py migrate
       - name: Run tests
-        run:  python polls/manage.py test
+        run:  python portfolio/manage.py test
 
         
     
