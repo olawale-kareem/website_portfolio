@@ -1,3 +1,7 @@
+
+
+
+
 {% load static%}
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +37,8 @@
 </head>
 
 <body>
+
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -143,12 +149,15 @@
                         About me
                       </h5>
                     </div>
-                    <p class="lead">
+                    {% for me in about%}
+                    <p class="lead"> {{me}} </p> <br>
+                    {% endfor%}                       
+                    {% comment %} <p class="lead">
                       Techrepreneur and a renaissance software developer with an interest in building tommorow of things.
                     </p>
                     <p class="lead">
                       Passionate about building quality solutions that cut across all sector of human lives with the aim to make the world a better place and as well drive revenue.
-                    </p>
+                    </p> {% endcomment %}
                   </div>
                 </div>
               </div>
@@ -618,4 +627,4 @@
 
 </body>
 
-</html>
+</html> 
