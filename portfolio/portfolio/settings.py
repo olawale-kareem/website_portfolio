@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-gzel-1uqfd4k11)f(rw$fhy_8o*_@cfpvx_pgsvi(fv(y)5px0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'immense-atoll-47350.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -133,7 +133,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-
 
 STATIC_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
